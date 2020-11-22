@@ -1,829 +1,819 @@
 $blue: #1479ff;
 
 @mixin commonBox() {
-    box-shadow: 0px 8px 9px 2px #e2eaf5;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-radius: 25px;
+  box-shadow: 0px 8px 9px 2px #e2eaf5;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 
 .img--style01 {
-    display: block;
-    margin: auto;
-    width: 100%;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 
 .container {
-    background-color: #f8fbff;
-    padding: 45px;
-    box-sizing: border-box;
-    position: relative;
+  background-color: #f8fbff;
+  padding: 45px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .section__tit {
-    font-size: 32px;
-    color: #193b68;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 25px;
-    line-height: 1em;
-    display: flex;
-    align-items: flex-end;
+  font-size: 32px;
+  color: #193b68;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 25px;
+  line-height: 1em;
+  display: flex;
+  align-items: flex-end;
 }
 
 .dim {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
-    z-index: 999;
-    opacity: 0;
-    display: none;
-    cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  opacity: 0;
+  display: none;
+  cursor: pointer;
 }
 
 .certificate__popup {
-    position: fixed;
-    top: 50px;
-    left: 50%;
-    width: 600px;
-    margin-left: -300px;
-    z-index: 1000;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  z-index: 1000;
 
-    .popup__close {
-        width: 40px;
-        height: 40px;
-        background-image: url(/image/common/close_icon.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        right: -60px;
-        cursor: pointer;
-    }
+  .popup__close {
+    width: 40px;
+    height: 40px;
+    background-image: url(/image/common/close_icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    cursor: pointer;
+  }
 }
 
-// SIDEBAR 
+// SIDEBAR
 .sidebar {
-    background-color: #fff;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 45px 25px;
-    width: 300px;
-    height: 100vh;
-    overflow-y: scroll;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 45px 25px;
+  width: 300px;
+  height: 100vh;
+  overflow-y: scroll;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #dcdcdc;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .sidebar__profile {
     text-align: center;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
 
-    &::-webkit-scrollbar {
-        width: 3px;
-        background: none;
+    .img--style01 {
+      width: 130px;
+      margin: auto;
+      padding: 10px;
+      box-shadow: 0px 0px 16px 0px #e6f1ff;
+      border-radius: 50%;
     }
 
-    &::-webkit-scrollbar-thumb {
-        background: #dcdcdc;
+    .profile__job {
+      text-transform: uppercase;
+      background-color: #fcf87a;
+      display: inline-block;
+      font-size: 12px;
+      padding: 5px 12px;
+      margin-top: 12px;
+      font-weight: 500;
     }
 
-    &::-webkit-scrollbar-track {
-        background: none;
+    .profile__name {
+      margin-top: 12px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 10px;
+      text-indent: 10px;
+    }
+  }
+
+  .sidebar__contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    .contact__call {
+      width: 45px;
+      height: 45px;
+      margin: 0 10px;
+      cursor: pointer;
+      position: relative;
+
+      .call__icon {
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        border-radius: 50%;
+        background-image: url(/image/sidebar/call.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        transition: all ease 0.3s;
+        position: relative;
+        z-index: 3;
+      }
+
+      .circle01 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 2;
+        background-color: #37dbe6;
+      }
+
+      .circle02 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 1;
+        background-color: #37dbe6;
+      }
+
+      &:hover,
+      &.active {
+        .call__icon {
+          background-color: #37dbe6;
+          background-image: url(/image/sidebar/call_on.png);
+        }
+
+        .circle01 {
+          animation: scaling 2s linear infinite;
+          animation-delay: 0s;
+        }
+
+        .circle02 {
+          animation: scaling 2s linear infinite;
+          animation-delay: 0.3s;
+        }
+      }
     }
 
-    &:last-child {
-        border-bottom: none;
+    .contact__mail {
+      width: 45px;
+      height: 45px;
+      margin: 0 10px;
+      cursor: pointer;
+      position: relative;
+
+      .mail__icon {
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        border-radius: 50%;
+        background-image: url(/image/sidebar/mail.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        transition: all ease 0.5s;
+        position: relative;
+        z-index: 3;
+      }
+
+      .circle01 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #f83e3e;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 2;
+      }
+
+      .circle02 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #f83e3e;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 1;
+      }
+
+      &:hover,
+      &.active {
+        .mail__icon {
+          background-color: #f83e3e;
+          background-image: url(/image/sidebar/mail_on.png);
+        }
+
+        .circle01 {
+          animation: scaling 2s linear infinite;
+          animation-delay: 0s;
+        }
+
+        .circle02 {
+          animation: scaling 2s linear infinite;
+          animation-delay: 0.5s;
+        }
+      }
     }
 
-    .sidebar__profile {
-        text-align: center;
+    .contact__git {
+      width: 45px;
+      height: 45px;
+      margin: 0 10px;
+      cursor: pointer;
+      position: relative;
 
-        .img--style01 {
-            width: 130px;
-            margin: auto;
-            padding: 10px;
-            box-shadow: 0px 0px 16px 0px #e6f1ff;
-            border-radius: 50%;
+      .git__icon {
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        border-radius: 50%;
+        background-image: url(/image/sidebar/github.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        transition: all ease 0.5s;
+        position: relative;
+        z-index: 3;
+      }
+
+      .circle01 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #000;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 2;
+      }
+
+      .circle02 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #000;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 1;
+      }
+
+      &:hover,
+      &.active {
+        .git__icon {
+          background-color: #000;
+          background-image: url(/image/sidebar/github_on.png);
         }
 
-        .profile__job {
-            text-transform: uppercase;
-            background-color: #fcf87a;
-            display: inline-block;
-            font-size: 12px;
-            padding: 5px 12px;
-            margin-top: 12px;
-            font-weight: 500;
+        .circle01 {
+          animation: scaling 2s linear infinite;
+          animation-delay: 0s;
         }
 
-        .profile__name {
-            margin-top: 12px;
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: 10px;
-            text-indent: 10px;
+        .circle02 {
+          animation: scaling 2s linear infinite;
+          animation-delay: 0.5s;
         }
+      }
     }
+  }
 
-    .sidebar__contact {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
+  .sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        .contact__call {
-            width: 45px;
-            height: 45px;
-            margin: 0 10px;
-            cursor: pointer;
-            position: relative;
+    .menu__wrap {
+      margin-top: 35px;
+      cursor: pointer;
 
-            .call__icon {
-                width: 45px;
-                height: 45px;
-                background-color: #fff;
-                border-radius: 50%;
-                background-image: url(/image/sidebar/call.png);
-                background-position: center;
-                background-size: 25px;
-                background-repeat: no-repeat;
-                transition: all ease .3s;
-                position: relative;
-                z-index: 3;
-            }
+      .menu__img {
+        width: 65px;
+        height: 65px;
+        background-color: #f3f8ff;
+        background-position: center;
+        background-size: 32px;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin: auto;
+        transition: all ease 0.3s;
+      }
 
-            .circle01 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                border-radius: 50%;
-                transform: scale(0);
-                z-index: 2;
-                background-color: #37dbe6;
-            }
+      .menu__name {
+        margin-top: 12px;
+        color: #193c68;
+        font-size: 13px;
+        transition: all ease 0.3s;
+      }
 
-            .circle02 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                border-radius: 50%;
-                transform: scale(0);
-                z-index: 1;
-                background-color: #37dbe6;
-            }
-
-            &:hover,
-            &.active {
-                .call__icon {
-                    background-color: #37dbe6;
-                    background-image: url(/image/sidebar/call_on.png);
-                }
-
-                .circle01 {
-                    animation: scaling 2s linear infinite;
-                    animation-delay: 0s;
-                }
-
-                .circle02 {
-                    animation: scaling 2s linear infinite;
-                    animation-delay: .3s;
-                }
-            }
+      &.on {
+        .menu__img {
+          background-color: $blue;
+          box-shadow: 0px 13px 9px -7px rgba(20, 121, 255, 0.4);
         }
 
-        .contact__mail {
-            width: 45px;
-            height: 45px;
-            margin: 0 10px;
-            cursor: pointer;
-            position: relative;
-
-            .mail__icon {
-                width: 45px;
-                height: 45px;
-                background-color: #fff;
-                border-radius: 50%;
-                background-image: url(/image/sidebar/mail.png);
-                background-position: center;
-                background-size: 25px;
-                background-repeat: no-repeat;
-                transition: all ease .5s;
-                position: relative;
-                z-index: 3;
-            }
-
-            .circle01 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                background-color: #f83e3e;
-                border-radius: 50%;
-                transform: scale(0);
-                z-index: 2;
-            }
-
-            .circle02 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                background-color: #f83e3e;
-                border-radius: 50%;
-                transform: scale(0);
-                z-index: 1;
-            }
-
-            &:hover,
-            &.active {
-                .mail__icon {
-                    background-color: #f83e3e;
-                    background-image: url(/image/sidebar/mail_on.png);
-                }
-
-                .circle01 {
-                    animation: scaling 2s linear infinite;
-                    animation-delay: 0s;
-                }
-
-                .circle02 {
-                    animation: scaling 2s linear infinite;
-                    animation-delay: .5s;
-                }
-            }
+        .menu__name {
+          color: #1479ff;
+          font-weight: 500;
         }
 
-        .contact__git {
-            width: 45px;
-            height: 45px;
-            margin: 0 10px;
-            cursor: pointer;
-            position: relative;
-
-            .git__icon {
-                width: 45px;
-                height: 45px;
-                background-color: #fff;
-                border-radius: 50%;
-                background-image: url(/image/sidebar/github.png);
-                background-position: center;
-                background-size: 25px;
-                background-repeat: no-repeat;
-                transition: all ease .5s;
-                position: relative;
-                z-index: 3;
-            }
-
-            .circle01 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                background-color: #000;
-                border-radius: 50%;
-                transform: scale(0);
-                z-index: 2;
-            }
-
-            .circle02 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                background-color: #000;
-                border-radius: 50%;
-                transform: scale(0);
-                z-index: 1;
-            }
-
-            &:hover,
-            &.active {
-                .git__icon {
-                    background-color: #000;
-                    background-image: url(/image/sidebar/github_on.png);
-                }
-
-                .circle01 {
-                    animation: scaling 2s linear infinite;
-                    animation-delay: 0s;
-                }
-
-                .circle02 {
-                    animation: scaling 2s linear infinite;
-                    animation-delay: .5s;
-                }
-            }
+        &:nth-child(1) {
+          .menu__img {
+            background-image: url(/image/sidebar/about_icon_on.png);
+          }
         }
+
+        &:nth-child(2) {
+          .menu__img {
+            background-image: url(/image/sidebar/ability_icon_on.png);
+          }
+        }
+
+        &:nth-child(3) {
+          .menu__img {
+            background-image: url(/image/sidebar/certificate_icon_on.png);
+          }
+        }
+
+        &:nth-child(4) {
+          .menu__img {
+            background-image: url(/image/sidebar/portfolio_icon_on.png);
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        margin-top: 45px;
+
+        .menu__img {
+          background-image: url(/image/sidebar/about_icon.png);
+        }
+      }
+
+      &:nth-child(2) {
+        .menu__img {
+          background-image: url(/image/sidebar/ability_icon.png);
+        }
+      }
+
+      &:nth-child(3) {
+        .menu__img {
+          background-image: url(/image/sidebar/certificate_icon.png);
+        }
+      }
+
+      &:nth-child(4) {
+        .menu__img {
+          background-image: url(/image/sidebar/portfolio_icon.png);
+        }
+      }
     }
-
-    .sidebar__menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .menu__wrap {
-            margin-top: 35px;
-            cursor: pointer;
-
-            .menu__img {
-                width: 65px;
-                height: 65px;
-                background-color: #f3f8ff;
-                background-position: center;
-                background-size: 32px;
-                background-repeat: no-repeat;
-                border-radius: 20px;
-                margin: auto;
-                transition: all ease .3s;
-            }
-
-            .menu__name {
-                margin-top: 12px;
-                color: #193c68;
-                font-size: 13px;
-                transition: all ease .3s;
-            }
-
-            &.on {
-                .menu__img {
-                    background-color: $blue;
-                    box-shadow: 0px 13px 9px -7px rgba(20, 121, 255, 0.4);
-                }
-
-                .menu__name {
-                    color: #1479ff;
-                    font-weight: 500;
-                }
-
-                &:nth-child(1) {
-                    .menu__img {
-                        background-image: url(/image/sidebar/about_icon_on.png);
-                    }
-                }
-
-                &:nth-child(2) {
-                    .menu__img {
-                        background-image: url(/image/sidebar/ability_icon_on.png);
-                    }
-                }
-
-                &:nth-child(3) {
-                    .menu__img {
-                        background-image: url(/image/sidebar/certificate_icon_on.png);
-                    }
-                }
-
-                &:nth-child(4) {
-                    .menu__img {
-                        background-image: url(/image/sidebar/portfolio_icon_on.png);
-                    }
-                }
-            }
-
-            &:nth-child(1) {
-                margin-top: 45px;
-
-                .menu__img {
-                    background-image: url(/image/sidebar/about_icon.png);
-                }
-            }
-
-            &:nth-child(2) {
-                .menu__img {
-                    background-image: url(/image/sidebar/ability_icon.png);
-                }
-            }
-
-            &:nth-child(3) {
-                .menu__img {
-                    background-image: url(/image/sidebar/certificate_icon.png);
-                }
-            }
-
-            &:nth-child(4) {
-                .menu__img {
-                    background-image: url(/image/sidebar/portfolio_icon.png);
-                }
-            }
-        }
-    }
+  }
 }
 
 .main__container {
-    margin-left: 300px;
+  margin-left: 300px;
 }
-
 
 // CERTIFICATE
 .certificate__wrap {
-    margin-top: 25px;
-    @include commonBox();
-    background-color: #fff;
-    padding: 40px;
-    box-sizing: border-box;
+  margin-top: 25px;
+  @include commonBox();
+  background-color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
 
+  .certificate__list {
+    padding: 0 60px;
+    position: relative;
 
-    .certificate__list {
-        padding: 0 60px;
-        position: relative;
+    .slick-track {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 50px 0;
+    }
 
-        .slick-track {
-            display: flex;
-            justify-content: flex-start;
-            margin: 0;
-            padding: 50px 0;
-        }
+    .items {
+      text-align: center;
+      margin: 0 15px;
+      padding: 45px 15px;
+      box-shadow: 0px 0px 15px 3px #e4eef9;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 3px solid #fff;
+      transition: all ease 0.5s;
 
-        .items {
-            text-align: center;
-            margin: 0 15px;
-            padding: 45px 15px;
-            box-shadow: 0px 0px 15px 3px #e4eef9;
-            border-radius: 12px;
-            cursor: pointer;
-            border: 3px solid #fff;
-            transition: all ease .5s;
-
-            &:hover {
-                border-color: $blue;
-                transform: translateY(-20px);
-                box-shadow: 0px 12px 15px 5px #e4eef9;
-
-                .list__tit {
-                    color: $blue;
-                }
-            }
-        }
-
-        .list__thumb {
-            width: 85px;
-            height: 85px;
-            margin: auto;
-            background-color: #f3f8ff;
-            display: flex;
-            align-items: center;
-            border-radius: 25px;
-
-            img {
-                width: 45px;
-            }
-        }
+      &:hover {
+        border-color: $blue;
+        transform: translateY(-20px);
+        box-shadow: 0px 12px 15px 5px #e4eef9;
 
         .list__tit {
-            font-size: 16px;
-            color: #a3b1c3;
-            font-weight: 500;
-            line-height: 1.4em;
-            white-space: normal;
-            padding: 0 15px;
-            margin-top: 25px;
+          color: $blue;
         }
-
-        .list__arrows {
-            &>div {
-                cursor: pointer;
-                width: 50px;
-                height: 50px;
-                background-color: #f3f8ff;
-                border-radius: 50%;
-                background-size: 15px;
-                background-repeat: no-repeat;
-                background-position: center;
-                -webkit-transition: all ease .5s;
-                transition: all ease .5s;
-            }
-
-            .arrows__prev {
-                position: absolute;
-                top: 45%;
-                left: 0;
-                background-image: url(/image/about/calendar_prev.png);
-
-                &:hover {
-                    background-image: url(/image/about/calendar_prev_on.png);
-                    background-color: $blue;
-                    box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
-                }
-            }
-
-            .arrows__next {
-                position: absolute;
-                top: 45%;
-                right: 0;
-                background-image: url(/image/about/calendar_next.png);
-
-                &:hover {
-                    background-image: url(/image/about/calendar_next_on.png);
-                    background-color: $blue;
-                    box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
-                }
-            }
-        }
+      }
     }
 
-    .certificate__progress {
-        width: 100%;
-        height: 8px;
-        background: #f2f7fd;
-        z-index: 1;
-        position: relative;
-        border-radius: 10px;
+    .list__thumb {
+      width: 85px;
+      height: 85px;
+      margin: auto;
+      background-color: #f3f8ff;
+      display: flex;
+      align-items: center;
+      border-radius: 25px;
 
-        .bar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $blue;
-            height: 100%;
-            width: 0%;
-            transition: all ease .5s;
-            border-radius: 10px;
-            box-shadow: 1px 2px 8px 2px rgba(20, 121, 255, 0.3);
-        }
+      img {
+        width: 45px;
+      }
     }
+
+    .list__tit {
+      font-size: 16px;
+      color: #a3b1c3;
+      font-weight: 500;
+      line-height: 1.4em;
+      white-space: normal;
+      padding: 0 15px;
+      margin-top: 25px;
+    }
+
+    .list__arrows {
+      & > div {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: #f3f8ff;
+        border-radius: 50%;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+      }
+
+      .arrows__prev {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        background-image: url(/image/about/calendar_prev.png);
+
+        &:hover {
+          background-image: url(/image/about/calendar_prev_on.png);
+          background-color: $blue;
+          box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
+        }
+      }
+
+      .arrows__next {
+        position: absolute;
+        top: 45%;
+        right: 0;
+        background-image: url(/image/about/calendar_next.png);
+
+        &:hover {
+          background-image: url(/image/about/calendar_next_on.png);
+          background-color: $blue;
+          box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
+        }
+      }
+    }
+  }
+
+  .certificate__progress {
+    width: 100%;
+    height: 8px;
+    background: #f2f7fd;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+
+    .bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $blue;
+      height: 100%;
+      width: 0%;
+      transition: all ease 0.5s;
+      border-radius: 10px;
+      box-shadow: 1px 2px 8px 2px rgba(20, 121, 255, 0.3);
+    }
+  }
 }
 
 // PORTFOLIO
 .portfolio__wrap {
-    margin-top: 25px;
-    @include commonBox();
-    background-color: #fff;
-    padding: 40px;
-    box-sizing: border-box;
+  margin-top: 25px;
+  @include commonBox();
+  background-color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
 
-    .portfolio__nav {
-        display: flex;
+  .portfolio__nav {
+    display: flex;
 
-        &>p {
-            line-height: 1em;
-            font-size: 14px;
-            background-color: #f3f8ff;
-            padding: 7px 15px;
-            margin-right: 12px;
-            cursor: pointer;
-            font-weight: 300;
-            color: $blue;
-            border-radius: 3px;
+    & > p {
+      line-height: 1em;
+      font-size: 14px;
+      background-color: #f3f8ff;
+      padding: 7px 15px;
+      margin-right: 12px;
+      cursor: pointer;
+      font-weight: 300;
+      color: $blue;
+      border-radius: 3px;
 
-            &.on {
-                color: #fff;
-                background-color: $blue;
-                box-shadow: 0px 4px 7px 0px rgba(20, 121, 255, 0.4);
-            }
-        }
+      &.on {
+        color: #fff;
+        background-color: $blue;
+        box-shadow: 0px 4px 7px 0px rgba(20, 121, 255, 0.4);
+      }
     }
+  }
 
-    .portfolio__list {
-        position: relative;
-        width: 100%;
-        margin-top: 45px;
+  .portfolio__list {
+    position: relative;
+    width: 100%;
+    margin-top: 45px;
 
-        .list__item {
-            text-align: center;
-            margin: 1%;
-            padding: 25px 15px 35px 15px;
-            box-shadow: 0px 0px 15px 3px #e4eef9;
-            cursor: pointer;
-            border: 3px solid #fff;
-            border-radius: 12px;
-            transition: all ease .5s;
-            width: 23%;
-            box-sizing: border-box;
+    .list__item {
+      text-align: center;
+      margin: 1%;
+      padding: 25px 15px 35px 15px;
+      box-shadow: 0px 0px 15px 3px #e4eef9;
+      cursor: pointer;
+      border: 3px solid #fff;
+      border-radius: 12px;
+      transition: all ease 0.5s;
+      width: 23%;
+      box-sizing: border-box;
 
-            &:hover {
-                border-color: $blue;
-                transform: translateY(-20px);
-                box-shadow: 0px 12px 15px 5px #e4eef9;
+      &:hover {
+        border-color: $blue;
+        transform: translateY(-20px);
+        box-shadow: 0px 12px 15px 5px #e4eef9;
 
-                .list__category,
-                .list__tit {
-                    color: $blue;
-                }
-            }
-        }
-
+        .list__category,
         .list__tit {
-            font-size: 18px;
-            color: #193b68;
-            font-weight: 500;
-            line-height: 1.4em;
-            box-sizing: border-box;
-            margin-top: 5px;
-            padding: 0 15px;
-            transition: all ease .5s;
+          color: $blue;
         }
-
-        .list__category {
-            color: #9faec0;
-            margin-top: 12px;
-            transition: all ease .5s;
-        }
+      }
     }
-}
 
+    .list__tit {
+      font-size: 18px;
+      color: #193b68;
+      font-weight: 500;
+      line-height: 1.4em;
+      box-sizing: border-box;
+      margin-top: 5px;
+      padding: 0 15px;
+      transition: all ease 0.5s;
+    }
+
+    .list__category {
+      color: #9faec0;
+      margin-top: 12px;
+      transition: all ease 0.5s;
+    }
+  }
+}
 
 .contact__wrap {
-    display: flex;
-    margin-top: 25px;
+  display: flex;
+  margin-top: 25px;
 
-    .contact__banner {
-        @include commonBox();
-        flex: 1;
-        padding: 45px;
-        position: relative;
-        background-color: #fff;
-        overflow: hidden;
+  .contact__banner {
+    @include commonBox();
+    flex: 1;
+    padding: 45px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
 
-        .ele01 {
-            position: absolute;
-            top: 75px;
-            right: 100px;
-            width: 250px;
-            z-index: 2;
-            animation: floating 8s infinite;
-        }
-
-        .ele02 {
-            position: absolute;
-            top: 100px;
-            right: 200px;
-            width: 160px;
-            z-index: 1;
-            animation: floatingReverse 8s infinite;
-        }
-
-        .ele03 {
-            position: absolute;
-            top: 170px;
-            right: 20px;
-            width: 120px;
-            z-index: 1;
-            animation: floatingReverse 8s infinite;
-        }
-
-        .banner__skew {
-            background-color: #f3f8ff;
-            width: 500px;
-            height: 500px;
-            position: absolute;
-            top: 0;
-            right: -70px;
-            transform: skewX(-30deg);
-        }
+    .ele01 {
+      position: absolute;
+      top: 75px;
+      right: 100px;
+      width: 250px;
+      z-index: 2;
+      animation: floating 8s infinite;
     }
 
-    .contact__calendar {
-        @include commonBox();
-        width: 400px;
-        padding: 45px;
-        margin-left: 25px;
-        position: relative;
-
-        .calendar__cell {
-            display: flex;
-            flex-wrap: wrap;
-
-            .cell {
-                width: 38px;
-                height: 38px;
-                margin: 0 3px;
-                margin-top: 10px;
-                border: 2px solid #e2e8f1;
-                border-radius: 12px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                p {
-                    font-family: "Roboto", sans-serif;
-                    font-weight: 500;
-                    font-size: 15px;
-                    color: #e2e8f1;
-                }
-
-                &.empty {
-                    border: none;
-                }
-
-                &.hasEvent {
-                    border-color: #1479ff;
-                }
-
-                &.today {
-                    background-color: $blue;
-                    border-color: #1479ff;
-                    box-shadow: 0px 13px 9px -7px rgba(20, 121, 255, 0.4);
-
-                    p {
-                        color: #fff;
-                        font-size: 18px;
-                    }
-
-                }
-            }
-        }
-
-        .calendar__top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .calendar__month {
-            font-weight: 900;
-            color: #193b68;
-            font-size: 24px;
-            font-family: "Roboto", sans-serif;
-        }
-
-        .calendar__next,
-        .calendar__prev {
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            background-color: #f3f8ff;
-            border-radius: 50%;
-            background-size: 13px;
-            background-repeat: no-repeat;
-            background-position: center;
-            transition: all ease .5s;
-        }
-
-        .calendar__prev {
-            background-image: url(/image/about/calendar_prev.png);
-
-            &:hover {
-                background-image: url(/image/about/calendar_prev_on.png);
-                background-color: $blue;
-                box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
-            }
-        }
-
-        .calendar__next {
-            background-image: url(/image/about/calendar_next.png);
-
-            &:hover {
-                background-image: url(/image/about/calendar_next_on.png);
-                background-color: $blue;
-                box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
-            }
-        }
+    .ele02 {
+      position: absolute;
+      top: 100px;
+      right: 200px;
+      width: 160px;
+      z-index: 1;
+      animation: floatingReverse 8s infinite;
     }
 
+    .ele03 {
+      position: absolute;
+      top: 170px;
+      right: 20px;
+      width: 120px;
+      z-index: 1;
+      animation: floatingReverse 8s infinite;
+    }
 
+    .banner__skew {
+      background-color: #f3f8ff;
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      right: -70px;
+      transform: skewX(-30deg);
+    }
+  }
+
+  .contact__calendar {
+    @include commonBox();
+    width: 400px;
+    padding: 45px;
+    margin-left: 25px;
+    position: relative;
+
+    .calendar__cell {
+      display: flex;
+      flex-wrap: wrap;
+
+      .cell {
+        width: 38px;
+        height: 38px;
+        margin: 0 3px;
+        margin-top: 10px;
+        border: 2px solid #e2e8f1;
+        border-radius: 12px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #e2e8f1;
+        }
+
+        &.empty {
+          border: none;
+        }
+
+        &.hasEvent {
+          border-color: #1479ff;
+        }
+
+        &.today {
+          background-color: $blue;
+          border-color: #1479ff;
+          box-shadow: 0px 13px 9px -7px rgba(20, 121, 255, 0.4);
+
+          p {
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .calendar__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .calendar__month {
+      font-weight: 900;
+      color: #193b68;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .calendar__next,
+    .calendar__prev {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-color: #f3f8ff;
+      border-radius: 50%;
+      background-size: 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all ease 0.5s;
+    }
+
+    .calendar__prev {
+      background-image: url(/image/about/calendar_prev.png);
+
+      &:hover {
+        background-image: url(/image/about/calendar_prev_on.png);
+        background-color: $blue;
+        box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
+      }
+    }
+
+    .calendar__next {
+      background-image: url(/image/about/calendar_next.png);
+
+      &:hover {
+        background-image: url(/image/about/calendar_next_on.png);
+        background-color: $blue;
+        box-shadow: 0px 7px 3px -3px rgba(20, 121, 255, 0.4);
+      }
+    }
+  }
 }
-
-
-
 
 @keyframes scaling {
-    0% {
-        transform: scale(.9);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
 
-    100% {
-        transform: scale(1.4);
-        opacity: .1;
-    }
+  100% {
+    transform: scale(1.4);
+    opacity: 0.1;
+  }
 }
 
-
 @keyframes floating {
-    0% {
-        transform: translate(0px, 0px);
-    }
+  0% {
+    transform: translate(0px, 0px);
+  }
 
-    50% {
-        transform: translate(20px, -20px);
-    }
+  50% {
+    transform: translate(20px, -20px);
+  }
 
-    100% {
-        transform: translate(0px, 0px);
-    }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes floatingReverse {
-    0% {
-        transform: translate(20px, -20px);
-    }
+  0% {
+    transform: translate(20px, -20px);
+  }
 
-    50% {
-        transform: translate(0px, 0px);
-    }
+  50% {
+    transform: translate(0px, 0px);
+  }
 
-    100% {
-        transform: translate(20px, -20px);
-    }
+  100% {
+    transform: translate(20px, -20px);
+  }
 }

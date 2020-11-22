@@ -2,191 +2,189 @@
 $blue: #1479ff;
 
 @mixin commonBox() {
-    box-shadow: 0px 8px 9px 2px #e2eaf5;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-radius: 25px;
+  box-shadow: 0px 8px 9px 2px #e2eaf5;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 
 .skill__wrap {
-    @include commonBox();
-    background-color: #fff;
-    padding: 40px;
-    box-sizing: border-box;
-    margin-top: 25px;
+  @include commonBox();
+  background-color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: 25px;
 
-    .section__tit{
-        margin-bottom: 45px;
+  .section__tit {
+    margin-bottom: 45px;
+  }
+
+  .skill__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > li {
+      box-shadow: 0px 0px 15px 3px #e4eef9;
+      background-color: #fff;
+      box-sizing: border-box;
+      border-radius: 25px;
+      width: 49%;
+      margin-bottom: 2%;
+      display: flex;
+      align-items: center;
+      padding: 25px;
+      cursor: pointer;
+      transition: all ease 0.5s;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+
+      &.skill--html {
+        circle {
+          &:nth-child(2) {
+            stroke: #f45c1b;
+          }
+        }
+      }
+
+      &.skill--css {
+        circle {
+          &:nth-child(2) {
+            stroke: #109bf8;
+          }
+        }
+      }
+
+      &.skill--sass {
+        circle {
+          &:nth-child(2) {
+            stroke: #f67eba;
+          }
+        }
+      }
+
+      &.skill--javascript {
+        circle {
+          &:nth-child(2) {
+            stroke: #f7df1e;
+          }
+        }
+      }
+
+      &.skill--jquery {
+        circle {
+          &:nth-child(2) {
+            stroke: #0868ab;
+          }
+        }
+      }
+
+      &.skill--react {
+        circle {
+          &:nth-child(2) {
+            stroke: #00dbfc;
+          }
+        }
+      }
+
+      &.skill--nodejs {
+        circle {
+          &:nth-child(2) {
+            stroke: #6dbd4b;
+          }
+        }
+      }
+
+      &.skill--php {
+        circle {
+          &:nth-child(2) {
+            stroke: #777bb3;
+          }
+        }
+      }
+
+      &.skill--git {
+        circle {
+          &:nth-child(2) {
+            stroke: #f05033;
+          }
+        }
+      }
     }
 
-    .skill__card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .card__graph {
+      position: relative;
+      text-align: center;
 
-        &>li {
-            box-shadow: 0px 0px 15px 3px #e4eef9;
-            background-color: #fff;
-            box-sizing: border-box;
-            border-radius: 25px;
-            width: 49%;
-            margin-bottom: 2%;
-            display: flex;
-            align-items: center;
-            padding: 25px;
-            cursor: pointer;
-            transition: all ease .5s;
+      svg {
+        position: relative;
+        width: 150px;
+        height: 150px;
 
-            &:nth-last-child(1) {
-                margin-bottom: 0;
-            }
+        circle {
+          width: 100%;
+          height: 100%;
+          fill: none;
+          stroke-width: 2;
+          stroke-linecap: round;
+          transform: translate(5px, 5px);
+          transition: all ease 0.7s;
+          stroke: #fff;
 
-            &.skill--html {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #f45c1b;
-                    }
-                }
-            }
-
-            &.skill--css {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #109bf8;
-                    }
-                }
-            }
-
-            &.skill--sass {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #f67eba;
-                    }
-                }
-            }
-
-            &.skill--javascript {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #f7df1e;
-                    }
-                }
-            }
-
-            &.skill--jquery {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #0868ab;
-                    }
-                }
-            }
-
-            &.skill--react {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #00dbfc;
-                    }
-                }
-            }
-
-            &.skill--nodejs {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #6dbd4b;
-                    }
-                }
-            }
-
-            &.skill--php {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #777bb3;
-                    }
-                }
-            }
-
-            &.skill--git {
-                circle {
-                    &:nth-child(2) {
-                        stroke: #f05033;
-                    }
-                }
-            }
+          &:nth-child(2) {
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+          }
         }
+      }
 
-        .card__graph {
-            position: relative;
-            text-align: center;
-
-            svg {
-                position: relative;
-                width: 150px;
-                height: 150px;
-
-
-                circle {
-                    width: 100%;
-                    height: 100%;
-                    fill: none;
-                    stroke-width: 2;
-                    stroke-linecap: round;
-                    transform: translate(5px, 5px);
-                    transition: all ease .7s;
-                    stroke: #fff;
-
-                    &:nth-child(2) {
-                        stroke-dasharray: 440;
-                        stroke-dashoffset: 440;
-                    }
-                }
-            }
-
-            .img--style01 {
-                position: absolute;
-                width: 80px;
-                top: 35px;
-                left: 50%;
-                margin-left: -40px;
-                transition: all ease .5s;
-            }
-        }
-
-        .card__txt {
-            margin-left: 45px;
-
-            .txt__param01 {
-                font-size: 32px;
-                font-weight: 900;
-                color: #193b68;
-            }
-
-            .txt__param02 {
-                margin-top: 15px;
-                line-height: 1.4em;
-                white-space: normal;
-                height: 4.2em;
-                word-wrap: break-word;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-            }
-        }
-
-        &>li:hover {
-            transform: translateY(-20px);
-            box-shadow: 0px 12px 15px 5px #e4eef9;
-
-            circle {
-                &:nth-child(2) {
-                    stroke-dashoffset: 0;
-                }
-            }
-
-            .img--style01 {
-                transform: scale(1.1);
-            }
-        }
+      .img--style01 {
+        position: absolute;
+        width: 80px;
+        top: 35px;
+        left: 50%;
+        margin-left: -40px;
+        transition: all ease 0.5s;
+      }
     }
 
+    .card__txt {
+      margin-left: 45px;
+
+      .txt__param01 {
+        font-size: 32px;
+        font-weight: 900;
+        color: #193b68;
+      }
+
+      .txt__param02 {
+        margin-top: 15px;
+        line-height: 1.4em;
+        white-space: normal;
+        height: 4.2em;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    & > li:hover {
+      transform: translateY(-20px);
+      box-shadow: 0px 12px 15px 5px #e4eef9;
+
+      circle {
+        &:nth-child(2) {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .img--style01 {
+        transform: scale(1.1);
+      }
+    }
+  }
 }

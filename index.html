@@ -1,34 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <title>프론트엔드 개발자 김경식입니다.</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
 
-    <meta name="Author" content="kyoungsic Kim">
-    <meta name="designer" content="kyoungsic Kim">
+    <meta name="Author" content="kyoungsic Kim" />
+    <meta name="designer" content="kyoungsic Kim" />
 
-    <meta name="description" content="프론트엔드 개발자 김경식입니다.">
-    <meta property="og:description" content="김경식의 포트폴리오">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="프론트엔드 개발자 김경식입니다.">
+    <meta name="description" content="프론트엔드 개발자 김경식입니다." />
+    <meta property="og:description" content="김경식의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="프론트엔드 개발자 김경식입니다." />
     <!-- <meta property="og:image" content="대표이미지주소(full_url):관리자등록권장/이미지크기(1200x630px)">-->
 
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean"
-        rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/slick.min.css">
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/skill.css">
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="shortcut icon" href="/image/common/favicon.ico">
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/slick.min.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/skill.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="shortcut icon" href="/image/common/favicon.ico" />
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -41,507 +49,616 @@
     <script type="text/javascript" src="/js/portfolio.js"></script>
     <script type="text/javascript" src="/js/skill.js"></script>
     <script type="text/javascript" src="/js/waypoints.js"></script>
-    
-    
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
 
-<body>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
     <script defer src="/js/sidebar.js"></script>
     <div class="container">
-        <!-- 사이드바 -->
-        <aside class="sidebar">
-            <div class="sidebar__profile">
-                <img src="/image/sidebar/profile.png" alt="" class="img--style01">
-                <p class="profile__job">front-end developer</p>
-                <p class="profile__name">김경식</p>
-            </div>
-            <div class="sidebar__contact">
-                <a href="tel:01051418101" class="contact__call">
-                    <div class="call__icon"></div>
-                    <div class="circle01"></div>
-                    <div class="circle02"></div>
-                </a>
-
-                <div class="contact__mail">
-                    <div class="mail__icon"></div>
-                    <div class="circle01"></div>
-                    <div class="circle02"></div>
-                </div>
-
-                <a href="" class="contact__git">
-                    <div class="git__icon"></div>
-                    <div class="circle01"></div>
-                    <div class="circle02"></div>
-                </a>
-
-            </div>
-
-            <!-- 메뉴 -->
-            <nav class="sidebar__menu">
-                <div class="menu__wrap">
-                    <div class="menu__img"></div>
-                    <p class="menu__name">About</p>
-                </div>
-                <div class="menu__wrap">
-                    <div class="menu__img"></div>
-                    <p class="menu__name">Skills</p>
-                </div>
-                <div class="menu__wrap">
-                    <div class="menu__img"></div>
-                    <p class="menu__name">Certificate</p>
-                </div>
-                <div class="menu__wrap">
-                    <div class="menu__img"></div>
-                    <p class="menu__name">Portfolio</p>
-                </div>
-            </nav>
-            <!-- //메뉴 -->
-        </aside>
-        <!-- //사이드바 -->
-
-        <!-- 메인 노출 영역 -->
-        <div class="main__container">
-            <!-- About -->
-            <section class="about__wrap">
-                <!-- 메인비주얼 -->
-                <div class="about__mv">
-                    <div class="mv__ig">
-                        <img src="/image/about/document.png" alt="" class="ig__document">
-                        <div class="ig__elements">
-                            <img src="/image/about/ele01.png" alt="" class="ele01">
-                            <img src="/image/about/ele02.png" alt="" class="ele02">
-                            <img src="/image/about/ele03.png" alt="" class="ele03">
-                            <img src="/image/about/ele04.png" alt="" class="ele04">
-                            <img src="/image/about/ele05.png" alt="" class="ele05">
-                        </div>
-                        <img src="/image/about/person.png" alt="" class="ig__person">
-                    </div>
-                    <div class="mv__txt">
-                        <span class="txt__typing">
-                        </span>
-
-                        <p>
-                            Front-End 개발자 김경식입니다.
-                        </p>
-
-                        <button type="button" class="txt__mail">View Portfolio</button>
-                    </div>
-                    <div class="mv__skew"></div>
-                </div>
-                <!-- //메인비주얼 -->
-
-                <div class="about__intro">
-                    <p class="section__tit">about</p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, ipsum. Blanditiis pariatur accusantium adipisci, atque facilis, laboriosam voluptates mollitia vel inventore deserunt ducimus excepturi, provident quas animi rerum nihil placeat!
-                </div>
-            </section>
-            <!-- //About -->
-
-            <!-- Skill -->
-            <section class="skill__wrap">
-                <p class="section__tit">skills</p>
-                <ul class="skill__card">
-                    <li class="skill--html">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/html_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">HTML</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li class="skill--css">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/css_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">CSS</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li class="skill--sass">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/sass_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">SCSS(SASS)</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li class="skill--javascript">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/javascript_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">Vanila Javascript</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li class="skill--jquery">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/jquery_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">jQuery</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="skill--react">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/react_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">React</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="skill--nodejs">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/nodejs_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">Node.js</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="skill--php">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/php_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">PHP</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li class="skill--git">
-                        <div class="card__graph">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <img src="/image/skill/git_icon.png" alt="" class="img--style01">
-                        </div>
-                        <div class="card__txt">
-                            <p class="txt__param01">Git</p>
-                            <p class="txt__param02">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto accusantium eum veniam, facere est natus nesciunt nostrum harum perspiciatis! Assumenda consequatur rem voluptatem doloribus quidem tempora nesciunt consectetur pariatur.
-                            </p>
-                        </div>
-                    </li>
-
-                </ul>
-            </section>
-
-            <!-- //Skill -->
-
-            <!-- Certificate -->
-            <section class="certificate__wrap">
-                <p class="section__tit">
-                    certificate
-                </p>
-                <ul class="certificate__list">
-                    <li class="items" data-img="/image/certificate/certi_img01.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/information_processing.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            정보처리산업기사
-                        </p>
-                    </li>
-
-                    <li class="items" data-img="/image/certificate/certi_img02.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/ocjp.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            OCJP <br>
-                        </p>
-                    </li>
-
-                    <li class="items" data-img="/image/certificate/certi_img03.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/photoshop.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            GTQ 1급
-                        </p>
-                    </li>
-
-                    <li class="items" data-img="/image/certificate/certi_img04.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/illustrator.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            GTQi 1급
-                        </p>
-                    </li>
-
-                    <li class="items" data-img="/image/certificate/certi_img05.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/excel.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            ITQ Excel
-                        </p>
-                    </li>
-
-                    <li class="items" data-img="/image/certificate/certi_img06.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/powerpoint.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            ITQ Powerpoint
-                        </p>
-                    </li>
-
-                    <li class="items" data-img="/image/certificate/certi_img07.jpg">
-                        <div class="list__thumb">
-                            <img src="/image/certificate/word.png" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            ITQ Word
-                        </p>
-                    </li>
-                    <li class="list__arrows">
-                        <div class="arrows__prev"></div>
-                        <div class="arrows__next"></div>
-                    </li>
-                </ul>
-
-                <div class="certificate__progress">
-                    <div class="bar"></div>
-                </div>
-            </section>
-            <!-- //Certificate -->
-
-            <!-- Portfolio -->
-            <section class="portfolio__wrap">
-                <p class="section__tit">portolio</p>
-
-                <nav class="portfolio__nav">
-                    <p class="on">전체</p>
-                    <p>웹사이트</p>
-                    <p>이벤트</p>
-                    <p>일러스트</p>
-                </nav>
-
-                <ul class="portfolio__list">
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-
-                    <li class="list__item">
-                        <div class="list__thumb">
-                            <img src="/image/portfolio/portfolio_sample.jpg" alt="" class="img--style01">
-                        </div>
-                        <p class="list__tit">
-                            포트폴리오 이름
-                        </p>
-                        <div class="list__category">웹사이트</div>
-                    </li>
-                </ul>
-
-                <div class="portfolio__progress">
-                    <div class="bar"></div>
-                </div>
-
-            </section>
-            <!-- //Portfolio -->
-
-
-            <!-- 컨택트폼 -->
-            <section class="contact__wrap">
-                <div class="contact__banner">
-                    <p class="section__tit">contact</p>
-                    <img src="/image/portfolio/mail_img01.png" alt="" class="ele ele01 img--style01">
-                    <img src="/image/portfolio/mail_img02.png" alt="" class="ele ele02 img--style01">
-                    <img src="/image/portfolio/mail_img03.png" alt="" class="ele ele03 img--style01">
-                    <div class="banner__skew"></div>
-                </div>
-
-                <div class="contact__calendar">
-                    <div class="calendar__top">
-                        <p class="calendar__prev"></p>
-                        <p class="calendar__month"></p>
-                        <p class="calendar__next"></p>
-                    </div>
-
-                    <div class="calendar__cell"></div>
-                </div>
-            </section>
-            <!-- //컨택트폼 -->
+      <!-- 사이드바 -->
+      <aside class="sidebar">
+        <div class="sidebar__profile">
+          <img src="/image/sidebar/profile.png" alt="" class="img--style01" />
+          <p class="profile__job">front-end developer</p>
+          <p class="profile__name">김경식</p>
         </div>
-        <!-- //메인 노출 영역 -->
+        <div class="sidebar__contact">
+          <a href="tel:01051418101" class="contact__call">
+            <div class="call__icon"></div>
+            <div class="circle01"></div>
+            <div class="circle02"></div>
+          </a>
+
+          <div class="contact__mail">
+            <div class="mail__icon"></div>
+            <div class="circle01"></div>
+            <div class="circle02"></div>
+          </div>
+
+          <a href="" class="contact__git">
+            <div class="git__icon"></div>
+            <div class="circle01"></div>
+            <div class="circle02"></div>
+          </a>
+        </div>
+
+        <!-- 메뉴 -->
+        <nav class="sidebar__menu">
+          <div class="menu__wrap">
+            <div class="menu__img"></div>
+            <p class="menu__name">About</p>
+          </div>
+          <div class="menu__wrap">
+            <div class="menu__img"></div>
+            <p class="menu__name">Skills</p>
+          </div>
+          <div class="menu__wrap">
+            <div class="menu__img"></div>
+            <p class="menu__name">Certificate</p>
+          </div>
+          <div class="menu__wrap">
+            <div class="menu__img"></div>
+            <p class="menu__name">Portfolio</p>
+          </div>
+        </nav>
+        <!-- //메뉴 -->
+      </aside>
+      <!-- //사이드바 -->
+
+      <!-- 메인 노출 영역 -->
+      <div class="main__container">
+        <!-- About -->
+        <section class="about__wrap">
+          <!-- 메인비주얼 -->
+          <div class="about__mv">
+            <div class="mv__ig">
+              <img
+                src="/image/about/document.png"
+                alt=""
+                class="ig__document"
+              />
+              <div class="ig__elements">
+                <img src="/image/about/ele01.png" alt="" class="ele01" />
+                <img src="/image/about/ele02.png" alt="" class="ele02" />
+                <img src="/image/about/ele03.png" alt="" class="ele03" />
+                <img src="/image/about/ele04.png" alt="" class="ele04" />
+                <img src="/image/about/ele05.png" alt="" class="ele05" />
+              </div>
+              <img src="/image/about/person.png" alt="" class="ig__person" />
+            </div>
+            <div class="mv__txt">
+              <span class="txt__typing"> </span>
+
+              <p>Front-End 개발자 김경식입니다.</p>
+
+              <button type="button" class="txt__mail">View Portfolio</button>
+            </div>
+            <div class="mv__skew"></div>
+          </div>
+          <!-- //메인비주얼 -->
+
+          <div class="about__intro">
+            <p class="section__tit">about</p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias,
+            ipsum. Blanditiis pariatur accusantium adipisci, atque facilis,
+            laboriosam voluptates mollitia vel inventore deserunt ducimus
+            excepturi, provident quas animi rerum nihil placeat!
+          </div>
+        </section>
+        <!-- //About -->
+
+        <!-- Skill -->
+        <section class="skill__wrap">
+          <p class="section__tit">skills</p>
+          <ul class="skill__card">
+            <li class="skill--html">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/html_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">HTML</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--css">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/css_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">CSS</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--sass">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/sass_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">SCSS(SASS)</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--javascript">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/javascript_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">Vanila Javascript</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--jquery">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/jquery_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">jQuery</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--react">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/react_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">React</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--nodejs">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/nodejs_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">Node.js</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--php">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/php_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">PHP</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+
+            <li class="skill--git">
+              <div class="card__graph">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <img
+                  src="/image/skill/git_icon.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <div class="card__txt">
+                <p class="txt__param01">Git</p>
+                <p class="txt__param02">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores architecto accusantium eum veniam, facere est natus
+                  nesciunt nostrum harum perspiciatis! Assumenda consequatur rem
+                  voluptatem doloribus quidem tempora nesciunt consectetur
+                  pariatur.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- //Skill -->
+
+        <!-- Certificate -->
+        <section class="certificate__wrap">
+          <p class="section__tit">certificate</p>
+          <ul class="certificate__list">
+            <li class="items" data-img="/image/certificate/certi_img01.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/information_processing.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">정보처리산업기사</p>
+            </li>
+
+            <li class="items" data-img="/image/certificate/certi_img02.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/ocjp.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">OCJP <br /></p>
+            </li>
+
+            <li class="items" data-img="/image/certificate/certi_img03.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/photoshop.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">GTQ 1급</p>
+            </li>
+
+            <li class="items" data-img="/image/certificate/certi_img04.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/illustrator.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">GTQi 1급</p>
+            </li>
+
+            <li class="items" data-img="/image/certificate/certi_img05.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/excel.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">ITQ Excel</p>
+            </li>
+
+            <li class="items" data-img="/image/certificate/certi_img05.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/powerpoint.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">ITQ Powerpoint</p>
+            </li>
+
+            <li class="items" data-img="/image/certificate/certi_img05.jpg">
+              <div class="list__thumb">
+                <img
+                  src="/image/certificate/word.png"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">ITQ Word</p>
+            </li>
+            <li class="list__arrows">
+              <div class="arrows__prev"></div>
+              <div class="arrows__next"></div>
+            </li>
+          </ul>
+
+          <div class="certificate__progress">
+            <div class="bar"></div>
+          </div>
+        </section>
+        <!-- //Certificate -->
+
+        <!-- Portfolio -->
+        <section class="portfolio__wrap">
+          <p class="section__tit">portolio</p>
+
+          <nav class="portfolio__nav">
+            <p class="on">전체</p>
+            <p>웹사이트</p>
+            <p>이벤트</p>
+            <p>일러스트</p>
+          </nav>
+
+          <ul class="portfolio__list">
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+
+            <li class="list__item">
+              <div class="list__thumb">
+                <img
+                  src="/image/portfolio/portfolio_sample.jpg"
+                  alt=""
+                  class="img--style01"
+                />
+              </div>
+              <p class="list__tit">포트폴리오 이름</p>
+              <div class="list__category">웹사이트</div>
+            </li>
+          </ul>
+
+          <div class="portfolio__progress">
+            <div class="bar"></div>
+          </div>
+        </section>
+        <!-- //Portfolio -->
+
+        <!-- 컨택트폼 -->
+        <section class="contact__wrap">
+          <div class="contact__banner">
+            <p class="section__tit">contact</p>
+            <img
+              src="/image/portfolio/mail_img01.png"
+              alt=""
+              class="ele ele01 img--style01"
+            />
+            <img
+              src="/image/portfolio/mail_img02.png"
+              alt=""
+              class="ele ele02 img--style01"
+            />
+            <img
+              src="/image/portfolio/mail_img03.png"
+              alt=""
+              class="ele ele03 img--style01"
+            />
+            <div class="banner__skew"></div>
+          </div>
+
+          <div class="contact__calendar">
+            <div class="calendar__top">
+              <p class="calendar__prev"></p>
+              <p class="calendar__month"></p>
+              <p class="calendar__next"></p>
+            </div>
+
+            <div class="calendar__cell"></div>
+          </div>
+        </section>
+        <!-- //컨택트폼 -->
+      </div>
+      <!-- //메인 노출 영역 -->
     </div>
     <!-- //container -->
 
     <div class="dim"></div>
     <div class="certificate__popup">
-        <img src="" alt="" class="img--style01">
-        <div class="popup__close"></div>
+      <img src="" alt="" class="img--style01" />
+      <div class="popup__close"></div>
     </div>
-
-    
-</body>
-
+  </body>
 </html>
