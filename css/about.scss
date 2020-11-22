@@ -1,0 +1,175 @@
+// INTRODUCE
+$blue: #1479ff;
+
+@mixin commonBox() {
+    box-shadow: 0px 8px 9px 2px #e2eaf5;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.about__wrap {
+    .about__mv {
+        @include commonBox();
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 75px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #1479ff;
+        align-items: center;
+
+        .mv__txt {
+            position: relative;
+            z-index: 1;
+            padding-left: 75px;
+            flex: 1;
+
+            p {
+                position: relative;
+                font-size: 35px;
+                line-height: 1em;
+                font-weight: 600;
+                color: #333;
+                margin-top: 20px;
+            }
+
+            .txt__typing {
+                color: $blue;
+                position: relative;
+                display: inline-block;
+                font-size: 80px;
+                font-weight: 900;
+                line-height: 1.2em;
+                font-family: "Roboto", sans-serif;
+                font-style: italic;
+                height: 85px;
+                text-shadow: 4px 4px 0px rgba(0, 0, 0, .2);
+
+                &::before{
+                    content: "";
+                    width: 2px;
+                    height: 85px;
+                    position: absolute;
+                    right: -12px;
+                    top: 0;
+                    background-color: $blue;
+                }
+
+                &.active{
+                    &::before{
+                        animation: typing 1s infinite;
+                    }
+                }
+            }
+
+            .txt__mail {
+                font-size: 14px;
+                border: none;
+                background-color: $blue;
+                color: #fff;
+                line-height: 55px;
+                height: 55px;
+                padding: 12px 45px;
+                line-height: 1em;
+                border-radius: 7px;
+                cursor: pointer;
+                transition: all ease .3s;
+                margin-top: 75px;
+
+                &:hover {
+                    transform: translate(-4px, -4px);
+                    box-shadow: 5px 12px 9px -7px rgba(20, 121, 255, 0.4);
+                }
+            }
+        }
+
+        .mv__ig {
+            display: block;
+            width: 556px;
+            height: 522px;
+            position: relative;
+            z-index: 1;
+
+            img {
+                position: absolute;
+            }
+
+            .ig__person {
+                top: 160px;
+                left: 127px;
+            }
+
+            .ig__document {
+                top: 0;
+                left: 10px;
+                -webkit-box-shadow: 15px 15px 0px 0px rgba(29, 119, 204, 0.2);
+                box-shadow: 15px 15px 0px 0px rgba(29, 119, 204, 0.2);
+            }
+
+            .ig__elements {
+                img {
+                    animation-duration: 3s;
+                }
+
+                .ele01 {
+                    top: 65px;
+                    left: 0px;
+                }
+
+                .ele02 {
+                    top: 215px;
+                    left: 21px;
+                }
+
+                .ele03 {
+                    top: 65px;
+                    left: 182px;
+                }
+
+                .ele04 {
+                    top: 65px;
+                    left: 374px;
+                }
+
+                .ele05 {
+                    top: 190px;
+                    left: 375px;
+                }
+            }
+        }
+
+        .mv__skew {
+            background-color: #fcf87a;
+            width: 1200px;
+            height: 700px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -600px;
+            transform: skewX(-40deg);
+            z-index: 0;
+
+            &::before {
+                content: "";
+                background-color: #fff;
+                width: calc(100% - 80px);
+                height: 700px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: calc(-100% / 2 + 40px);
+            }
+        }
+
+    }
+
+    .about__intro{
+        @include commonBox();
+        padding: 40px;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 25px;
+    }
+}

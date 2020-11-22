@@ -1,0 +1,116 @@
+.skill__wrap {
+  -webkit-box-shadow: 0px 8px 9px 2px #e2eaf5;
+          box-shadow: 0px 8px 9px 2px #e2eaf5;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: 25px; }
+  .skill__wrap .section__tit {
+    margin-bottom: 45px; }
+  .skill__wrap .skill__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .skill__wrap .skill__card > li {
+      -webkit-box-shadow: 0px 0px 15px 3px #e4eef9;
+              box-shadow: 0px 0px 15px 3px #e4eef9;
+      background-color: #fff;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 25px;
+      width: 49%;
+      margin-bottom: 2%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 25px;
+      cursor: pointer;
+      -webkit-transition: all ease .5s;
+      transition: all ease .5s; }
+      .skill__wrap .skill__card > li:nth-last-child(1) {
+        margin-bottom: 0; }
+      .skill__wrap .skill__card > li.skill--html circle:nth-child(2) {
+        stroke: #f45c1b; }
+      .skill__wrap .skill__card > li.skill--css circle:nth-child(2) {
+        stroke: #109bf8; }
+      .skill__wrap .skill__card > li.skill--sass circle:nth-child(2) {
+        stroke: #f67eba; }
+      .skill__wrap .skill__card > li.skill--javascript circle:nth-child(2) {
+        stroke: #f7df1e; }
+      .skill__wrap .skill__card > li.skill--jquery circle:nth-child(2) {
+        stroke: #0868ab; }
+      .skill__wrap .skill__card > li.skill--react circle:nth-child(2) {
+        stroke: #00dbfc; }
+      .skill__wrap .skill__card > li.skill--nodejs circle:nth-child(2) {
+        stroke: #6dbd4b; }
+      .skill__wrap .skill__card > li.skill--php circle:nth-child(2) {
+        stroke: #777bb3; }
+      .skill__wrap .skill__card > li.skill--git circle:nth-child(2) {
+        stroke: #f05033; }
+    .skill__wrap .skill__card .card__graph {
+      position: relative;
+      text-align: center; }
+      .skill__wrap .skill__card .card__graph svg {
+        position: relative;
+        width: 150px;
+        height: 150px; }
+        .skill__wrap .skill__card .card__graph svg circle {
+          width: 100%;
+          height: 100%;
+          fill: none;
+          stroke-width: 2;
+          stroke-linecap: round;
+          -webkit-transform: translate(5px, 5px);
+                  transform: translate(5px, 5px);
+          -webkit-transition: all ease .7s;
+          transition: all ease .7s;
+          stroke: #fff; }
+          .skill__wrap .skill__card .card__graph svg circle:nth-child(2) {
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440; }
+      .skill__wrap .skill__card .card__graph .img--style01 {
+        position: absolute;
+        width: 80px;
+        top: 35px;
+        left: 50%;
+        margin-left: -40px;
+        -webkit-transition: all ease .5s;
+        transition: all ease .5s; }
+    .skill__wrap .skill__card .card__txt {
+      margin-left: 45px; }
+      .skill__wrap .skill__card .card__txt .txt__param01 {
+        font-size: 32px;
+        font-weight: 900;
+        color: #193b68; }
+      .skill__wrap .skill__card .card__txt .txt__param02 {
+        margin-top: 15px;
+        line-height: 1.4em;
+        white-space: normal;
+        height: 4.2em;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden; }
+    .skill__wrap .skill__card > li:hover {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      -webkit-box-shadow: 0px 12px 15px 5px #e4eef9;
+              box-shadow: 0px 12px 15px 5px #e4eef9; }
+      .skill__wrap .skill__card > li:hover circle:nth-child(2) {
+        stroke-dashoffset: 0; }
+      .skill__wrap .skill__card > li:hover .img--style01 {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
